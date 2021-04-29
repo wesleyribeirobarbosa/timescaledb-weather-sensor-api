@@ -1,0 +1,347 @@
+{
+	"info": {
+		"_postman_id": "9d6be214-5a5e-42b8-9b9c-b97e4c239c24",
+		"name": "TimescaleDB_POC",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get average temperature",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/average-temperature",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"average-temperature"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get average humidity",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/average-humidity",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"average-humidity"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Set Chunk Interval",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"interval\":\"24 hours\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/set-chunk-interval",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"set-chunk-interval"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get time bucket avg temperature",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"bucket_size\": \"15 minutes\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/time-bucket-avg-temperature",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"time-bucket-avg-temperature"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get time bucket max temperature",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"bucket_size\": \"10 minutes\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/time-bucket-max-temperature",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"time-bucket-max-temperature"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get time bucket min temperature",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"bucket_size\": \"10 minutes\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/time-bucket-min-temperature",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"time-bucket-min-temperature"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get time bucket min humidity",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"bucket_size\": \"10 minutes\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/time-bucket-min-humidity",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"time-bucket-min-humidity"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get time bucket max humidity",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"bucket_size\": \"10 minutes\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/time-bucket-max-humidity",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"time-bucket-max-humidity"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get time bucket avg humidity",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"bucket_size\": \"15 minutes\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/time-bucket-avg-humidity",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"time-bucket-avg-humidity"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get humidity histogram",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nBuckets\": \"4\",\r\n    \"minLimit\": \"35\",\r\n    \"maxLimit\": \"90\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/humidity-histogram",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"humidity-histogram"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get temperature histogram",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nBuckets\": \"4\",\r\n    \"minLimit\": \"35\",\r\n    \"maxLimit\": \"90\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/temperature-histogram",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"temperature-histogram"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

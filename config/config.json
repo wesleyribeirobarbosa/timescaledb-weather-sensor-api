@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "nouvenn2021",
+    "database": "sensordata",
+    "host": "localhost",
+    "dialect": "postgres",
+    "protocol": "postgres"
+  },
+  "test": {
+    "username": "postgres",
+    "password": "nouvenn2021",
+    "database": "sensordata",
+    "host": "localhost",
+    "dialect": "postgres",
+    "protocol": "postgres"
+  },
+  "production": {
+    "username": "postgres",
+    "password": "nouvenn2021",
+    "database": "sensordata",
+    "host": "localhost",
+    "dialect": "postgres",
+    "protocol": "postgres"
+  }
+}
