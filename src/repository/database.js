@@ -39,16 +39,6 @@ exports.insertRows = async function(allRows) {
     }
 }
 
-exports.getTimeBucket = async function(start,end) {
-    try {
-        const [results, metadata] = await sequelize.query("SELECT AVG(temperature) FROM conditions");
-        return results;
-    } catch (e) {
-        console.log('Error!', e);
-        return e;
-    }
-}
-
 exports.getAVGTemperature = async function() {
     try {
         const [results, metadata] = await sequelize.query("SELECT AVG(temperature) FROM conditions");
